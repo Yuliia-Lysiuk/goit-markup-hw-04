@@ -122,7 +122,7 @@ ol {
   color: var(--main-text-color);
   align-items: center;
 }
-.list-item-connect:nth-child(1) {
+.list-connect:nth-child(1) {
   margin-right: 50px;
 }
 
@@ -355,10 +355,11 @@ footer .logo {
 }
 .conteiner-footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-text {
   color: var(--main-bg-color);
-  text-align: center;
+  font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -367,7 +368,6 @@ footer .logo {
   margin-right: 0;
 }
 .footer-social-conteiner {
-  padding-top: 12px;
   margin-left: 70px;
 }
 .footer-menu-social-networks {
