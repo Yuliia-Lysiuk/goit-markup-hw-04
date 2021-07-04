@@ -87,6 +87,9 @@ ol {
   color: var(--third-text-color);
   text-decoration: none;
 }
+.logo-accent {
+  color: var(--accent-color);
+}
 
 /* Навігація */
 .main-nav {
@@ -97,6 +100,18 @@ ol {
   display: flex;
   align-items: center;
 }
+.accent::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  margin-top: 28px;
+}
+/* .line-nav::after {
+  width: 78px;
+} */
 .menu-connect {
   display: flex;
   align-items: center;
@@ -132,8 +147,8 @@ ol {
   margin-right: 10px;
   fill: var(--main-text-color);
 }
-.list-connect:hover .icon-conect,
-.list-connect:focus .icon-conect {
+.list-item-connect:hover .icon-conect,
+.list-item-connect:focus .icon-conect {
   fill: var(--accent-color);
 }
 /* =======================END HEADER================ */
@@ -230,6 +245,18 @@ ol {
   margin-bottom: 50px;
   text-align: center;
 }
+.list-item-work {
+  position: relative;
+}
+.thumb-work {
+  display: flex;
+  padding-right: 27px;
+  padding-left: 27px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
 /* Team */
 .section-list-team {
   display: flex;
@@ -297,7 +324,7 @@ ol {
 .list-client {
   display: flex;
 }
-.list-item-client {
+.link-client {
   display: flex;
   width: 170px;
   height: 92px;
@@ -312,14 +339,14 @@ ol {
 .icon-client {
   fill: var(--social-icon-color);
 }
-.list-item-client:hover,
-.list-item-client:focus {
+.link-client:hover,
+.link-client:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.list-item-client:hover .icon-client,
-.list-item-client:focus .icon-client {
+.link-client:hover .icon-client,
+.link-client:focus .icon-client {
   fill: var(--accent-color);
 }
 /* =======================END MAIN====================== */
@@ -440,8 +467,13 @@ footer .logo {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
-.list-item-img:hover,
-.list-item-img:focus {
+.link-portfolio {
+  text-decoration: none;
+  color: var(--main-text-color);
+  display: block;
+}
+.link-portfolio:hover,
+.link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
